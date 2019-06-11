@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Deme_two</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agora_app_id">d5fa8d3072d748ea912992b15eeca9ae</string>
+</resources>

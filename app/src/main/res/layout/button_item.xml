@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ImageButton
+        android:id="@+id/reback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="204dp"
+        android:background="#00ffffff"
+        android:onClick="onViewClicked"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/port"
+        app:layout_constraintEnd_toStartOf="@+id/port" />
+
+    <ImageButton
+        android:id="@+id/port"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="28dp"
+        android:background="#00ffffff"
+        android:onClick="onViewClicked"
+        android:scaleType="fitXY"
+        android:src="@drawable/table"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/front"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="36dp"
+        android:background="#00ffffff"
+        android:onClick="onViewClicked"
+        android:src="@drawable/camera"
+        app:layout_constraintStart_toEndOf="@+id/port"
+        app:layout_constraintTop_toTopOf="@+id/port" />
+
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00ffffff"
+        android:onClick="onViewClicked"
+        android:text="美颜"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/bg_st"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+
+    <Button
+        android:id="@+id/morri"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:background="#00ffffff"
+        android:onClick="onViewClicked"
+        android:text="镜像"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fb"
+        app:layout_constraintStart_toEndOf="@+id/fb" />
+
+    <Button
+        android:id="@+id/bg_st"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#0a8eca"
+        android:textSize="19sp"
+        android:text="开始直播"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="直播房间名"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/reback"
+        app:layout_constraintTop_toTopOf="@+id/reback" />
+
+
+</android.support.constraint.ConstraintLayout>
